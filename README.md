@@ -1,6 +1,6 @@
-# Hey I'm Kevin
+# Hey, I'm Kevin
 
-My portfolio/resume website, built using these technologies:
+This is my portfolio/resume website, it's built using these technologies:
 - [Webpack](https://webpack.js.org/)
 - [Babel](https://babeljs.io/)
 - [Sass](https://sass-lang.com/)
