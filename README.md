@@ -9,6 +9,7 @@ This is my portfolio/resume website, it's built using these technologies:
 - [Google Fonts](https://fonts.google.com/)
 - [Fontello](http://fontello.com/)
 - [Amazon S3](https://aws.amazon.com/s3/)
+- [Amazon CloudFront](https://aws.amazon.com/cloudfront/)
 
 ## Setup
 
