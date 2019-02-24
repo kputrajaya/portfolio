@@ -10,8 +10,7 @@ Built using these technologies:
 - [Flexbox Grid](http://flexboxgrid.com/)
 - [Google Fonts](https://fonts.google.com/)
 - [Fontello](http://fontello.com/)
-- [Amazon S3](https://aws.amazon.com/s3/)
-- [Amazon CloudFront](https://aws.amazon.com/cloudfront/)
+- [GitHub Pages](https://pages.github.com/)
 
 ## Setup
 
