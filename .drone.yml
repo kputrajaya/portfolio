@@ -6,9 +6,9 @@ steps:
   image: node:11.11.0
   volumes:
   - name: npm
-    path: ./node_modules
+    path: /drone/src/github.com/kiloev/portfolio/node_modules
   commands:
-  - npm install
+  - npm install --prefix /tmp/npm
   - npm run build
 
 - name: publish
