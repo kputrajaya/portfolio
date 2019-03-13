@@ -6,9 +6,9 @@ steps:
   image: node:11.11.0
   volumes:
   - name: npm
-    path: /tmp/npm
+    path: node_modules
   commands:
-  - npm install --prefix /tmp/npm
+  - npm install
   - npm run build
 
 - name: publish
