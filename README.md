@@ -1,5 +1,7 @@
 # Hey, I'm Kevin
 
+[![Build Status](http://drone.kputrajaya.com/api/badges/kiloev/portfolio/status.svg)](http://drone.kputrajaya.com/kiloev/portfolio)
+
 My current portfolio/resume website.
 
 Built using these technologies:
