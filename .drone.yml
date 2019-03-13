@@ -8,7 +8,7 @@ steps:
   - name: npm
     path: /drone/src/github.com/kiloev/portfolio/node_modules
   commands:
-  - npm install --prefix /tmp/npm
+  - npm install
   - npm run build
 
 - name: publish
