@@ -6,7 +6,7 @@ steps:
   image: node:11.11.0
   volumes:
   - name: npm
-    path: node_modules
+    path: ./node_modules
   commands:
   - npm install
   - npm run build
