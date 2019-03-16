@@ -20,8 +20,6 @@ Built using these technologies:
 To serve the site on your local environment:
 
 ```
-$ git clone https://github.com/kiloev/heyimkevin
-$ cd heyimkevin
 $ npm install
 $ npm run server
 ```
