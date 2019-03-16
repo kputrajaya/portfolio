@@ -11,7 +11,7 @@ html, body {
     font-family: $font-serif;
     font-size: $font-size-sm;
     color: $color-red;
-    line-height: 1.7;
+    line-height: 1.8;
     opacity: 1;
     -webkit-transition: opacity $animation-delay;
     -moz-transition: opacity $animation-delay;
@@ -99,10 +99,11 @@ a:hover {
 
     h1 {
         margin: 0;
+        letter-spacing: -0.2px;
     }
 
     h3 {
-        margin: (-$space-xs) 0 0;
+        margin: -$space-sm 0 0;
         color: $color-mid-gray;
     }
 }
@@ -125,13 +126,13 @@ a:hover {
 
         &::before {
             content: "";
-            width: $font-size-sm;
-            height: $font-size-sm;
+            width: $font-size-xs;
+            height: $font-size-xs;
             background: $color-red;
             border-radius: 50%;
             position: absolute;
-            top: 24px;
-            left: -40px;
+            top: 26px;
+            left: -39px;
         }
 
         .title {
@@ -148,17 +149,22 @@ a:hover {
 }
 
 .searchbox {
-    margin: 0 0 $space-md;
-    padding: 5px;
+    margin: 0 0 $space-sm;
+    padding: 4px;
     width: 100%;
+    font-family: $font-sans;
+    font-size: $font-size-h5;
     background: transparent;
     color: $color-red;
     border: 0 solid $color-light-gray;
-    border-width: 0 0 2px;
+    border-width: 0 0 1px;
     outline: none;
+    position: relative;
+    top: -$space-xs;
 
     @media only screen and (min-width: 48em) {
-        margin: 3px 0 0;
+        margin: 13px 0 0;
+        top: 0;
     }
 }
 
@@ -170,7 +176,7 @@ a:hover {
 
     li {
         margin: 0 $space-xs $space-xs 0;
-        padding: 4px 8px;
+        padding: 3px 8px;
         font-size: $font-size-sm;
         background: $color-light-gray;
         display: inline-block;
