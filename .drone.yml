@@ -2,30 +2,29 @@ kind: pipeline
 name: default
 
 steps:
-- name: build
-  image: node:11.11.0
-  volumes:
-  - name: npm
-    path: /drone/src/node_modules
-  commands:
-  - npm install
-  - npm run build
-
-- name: publish
-  image: plugins/gh-pages
-  settings:
-    username:
-      from_secret: GITHUB_USERNAME
-    password:
-      from_secret: GITHUB_PASSWORD
+  - name: build
+    image: node:11.11.0
+    volumes:
+      - name: npm
+        path: /drone/src/node_modules
+    commands:
+      - npm install
+      - npm run build
+  - name: publish
+    image: plugins/gh-pages
+    settings:
+      username:
+        from_secret: GITHUB_USERNAME
+      password:
+        from_secret: GITHUB_PASSWORD
 
 volumes:
-- name: npm
-  host:
-    path: /drone/npm
+  - name: npm
+    host:
+      path: /drone/npm
 
 when:
   event:
-  - push
+    - push
   branch:
-  - master
+    - master
