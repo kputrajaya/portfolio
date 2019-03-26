@@ -11,13 +11,13 @@ Built using these technologies:
 - [Normalize.css](https://necolas.github.io/normalize.css/)
 - [Flexbox Grid](http://flexboxgrid.com/)
 - [Google Fonts](https://fonts.google.com/)
-- [Fontello](http://fontello.com/)
+- [Fontello](https://fontello.com/)
 - [GitHub Pages](https://pages.github.com/)
 - [Drone](https://drone.io/)
 
 ## Setup
 
-To serve the site on your local environment:
+To serve the site on your local machine:
 
 ```
 $ npm install
