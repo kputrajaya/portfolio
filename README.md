@@ -4,7 +4,8 @@
 
 My current portfolio/resume website.
 
-Built using these technologies:
+## Built with
+
 - [Webpack](https://webpack.js.org/)
 - [Babel](https://babeljs.io/)
 - [Sass](https://sass-lang.com/)
