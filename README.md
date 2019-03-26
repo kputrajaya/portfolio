@@ -1,6 +1,6 @@
 # Portfolio
 
-[![Build Status](https://drone.kputrajaya.com/api/badges/kiloev/portfolio/status.svg)](https://drone.kputrajaya.com/kiloev/portfolio)
+[![Build](https://drone.kputrajaya.com/api/badges/kiloev/portfolio/status.svg)](https://drone.kputrajaya.com/kiloev/portfolio)
 
 My current portfolio/resume website.
 
