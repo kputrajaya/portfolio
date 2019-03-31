@@ -4,7 +4,7 @@
 
 My current portfolio/resume website.
 
-## Built with
+## Built With
 
 - [Webpack](https://webpack.js.org/)
 - [Babel](https://babeljs.io/)
@@ -16,7 +16,7 @@ My current portfolio/resume website.
 - [GitHub Pages](https://pages.github.com/)
 - [Drone](https://drone.io/)
 
-## Setup
+## How to Use
 
 To serve the site on your local machine:
 
