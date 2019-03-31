@@ -25,14 +25,14 @@ $ npm install
 $ npm run server
 ```
 
-To build webpack:
+To build Webpack:
 
 ```
 $ npm run build
 ```
 
 
-To watch for file changes and rebuild webpack:
+To watch for file changes and rebuild Webpack:
 
 ```
 $ npm run watch
