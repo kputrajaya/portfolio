@@ -10,7 +10,7 @@
 html, body {
     font-family: $font-serif;
     font-size: $font-size-sm;
-    color: $color-red;
+    color: $color-dark-gray;
     line-height: 1.8;
     opacity: 1;
     -webkit-transition: opacity $animation-delay;
@@ -22,6 +22,8 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     font-family: $font-sans;
+    font-weight: 500;
+    color: $color-red;
 }
 h1 {
     font-size: $font-size-h1;
@@ -40,6 +42,7 @@ h5 {
 }
 
 a {
+    font-weight: inherit;
     color: inherit;
     text-decoration: none;
     border-bottom: 1px dashed $color-light-gray;
@@ -65,10 +68,10 @@ a:hover {
     }
 
     &-t-md {
-        margin-bottom: $space-md;
+        margin-top: $space-md;
     }
     &-b-md {
-        margin-top: $space-md;
+        margin-bottom: $space-md;
     }
 }
 
@@ -95,11 +98,11 @@ a:hover {
 }
 
 .heading {
-    margin: ($space-md - 5px) 0;
+    margin: $space-lg 0 $space-xs;
 
     h1 {
-        margin: 0;
-        letter-spacing: -0.2px;
+        margin: 0 0 0 -2px;
+        letter-spacing: -1px;
     }
 
     h3 {
@@ -109,7 +112,27 @@ a:hover {
 }
 
 .description {
+    margin-bottom: $space-lg;
     font-size: $font-size-h5;
+}
+
+.contact {
+    a {
+        margin-right: $space-sm;
+        border-bottom: none;
+        display: inline-block;
+    }
+
+    i {
+        width: $contact-size;
+        font-size: $font-size-h5;
+        color: $color-white;
+        text-align: center;
+        line-height: $contact-size;
+        background: $color-red;
+        border-radius: 50%;
+        display: inline-block;
+    }
 }
 
 .time {
@@ -126,13 +149,13 @@ a:hover {
 
         &::before {
             content: "";
-            width: $font-size-xs;
-            height: $font-size-xs;
+            width: 12px;
+            height: 12px;
             background: $color-red;
             border-radius: 50%;
             position: absolute;
-            top: 26px;
-            left: -39px;
+            top: 28px;
+            left: -38px;
         }
 
         .title {
@@ -153,7 +176,6 @@ a:hover {
     padding: 4px;
     width: 100%;
     font-family: $font-sans;
-    font-size: $font-size-h5;
     background: transparent;
     color: $color-red;
     border: 0 solid $color-light-gray;
@@ -163,7 +185,7 @@ a:hover {
     top: -$space-xs;
 
     @media only screen and (min-width: 48em) {
-        margin: 13px 0 0;
+        margin: 7px 0 0;
         top: 0;
     }
 }
@@ -188,22 +210,31 @@ a:hover {
     }
 }
 
-.contact {
-    i {
-        margin: 0 $space-xs $space-sm 0;
-        width: $contact-size;
-        font-size: $font-size-h5;
-        color: $color-white;
-        text-align: center;
-        line-height: $contact-size;
-        background: $color-red;
-        border-radius: 50%;
-        display: inline-block;
+.post {
+    .title {
+        h3 {
+            margin: 0;
+            font-size: $font-size-h1;
+        }
+
+        h5 {
+            margin: -2px 0 0;
+            color: $color-mid-gray;
+        }
     }
 
-    a {
-        padding: 1px 0;
-        display: inline-block;
+    .content {
+        margin-top: $space-md;
+        word-spacing: 1px;
+        line-height: 2;
+
+        p {
+            margin: 0 0 $space-md 0;
+        }
+
+        @media only screen and (min-width: 48em) {
+            font-size: $font-size-h5;
+        }
     }
 }
 
