@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32.png">
     <style>
         body {
-            background: #f8f8f8;
+            background: #f7f7f7;
             opacity: 0;
         }
     </style>
@@ -22,8 +22,8 @@
             <div class="col-xs-12 col-sm-9 col-md-6">
                 <div class="logo">
                     <svg width="80" height="80" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M375 250V375L250 250V500H500V0H250V125L375 250Z" fill="#CC3333"/>
-                        <path d="M250 0H0V500H125V250H250L125 125L250 0Z" fill="#CC3333"/>
+                        <path d="M375 250V375L250 250V500H500V0H250V125L375 250Z" fill="#CA3939"/>
+                        <path d="M250 0H0V500H125V250H250L125 125L250 0Z" fill="#CA3939"/>
                     </svg>
                 </div>
                 <div class="heading">
@@ -168,23 +168,16 @@
             <div class="col-xs-12">
                 <h2 class="gap-b-sm">Blog</h2>
             </div>
-            <div class="col-xs-12 col-md-9">
-                <div class="blog">
+            <div id="blogPosts" class="col-xs-12 col-md-9">
+                <template>
                     <div class="post">
                         <div class="title">
-                            <h3><a href="#">Worry</a></h3>
-                            <h5>February 1, 2019</h5>
+                            <h3>{{title}}</h3>
+                            <h5>{{date}}</h5>
                         </div>
-                        <div class="content">
-                            <p>"They do things wrong," says one. <br> "We might not survive this," says another.</p>
-                            <p><em>Countless people</em> worry about what they can't control. The action (and inaction) of others, the uncertainty of the future, and every other thing that happens around them. Those boggle their minds like a plague. It spreads from a corner of the brain to the entire thing, then to heart, and then to the whole body. It's also airborne, it seems, because it can spread to nearby hosts to do just the same.</p>
-                            <p>A while ago, I read that there are only two things that we can control in life: <strong>our minds and our actions</strong>. It means that everything else that those people dream of controlling, struggle to fix, or stress about, is <em>just noise</em>. It also means that they're better off putting their time into their own minds and actions, maybe to get themselves better, be more successful, or whatever.</p>
-                            <p>I know of this even before reading, just like many other psychological facts and theories—you know, something that makes you think, "Hey, it sounds right but I didn't really realize about it." But people are funny that way. We <em>know</em> of things, but we don't <em>always</em> do. Sometimes, we get excited and forget about things. Other times, we get afraid and become plain stupid!</p>
-                            <p>Now, I have to admit, I'm one of those "countless people". Maybe you are, too. And we, above all, just need to be reminded:</p>
-                            <p><strong>Only worry about our minds and our actions.</strong></p>
-                        </div>
+                        <div class="content">{{content}}</div>
                     </div>
-                </div>
+                </template>
             </div>
         </div>
     </div>

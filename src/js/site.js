@@ -2,6 +2,20 @@
 
   const stripText = text => text.toLowerCase().replace(/[\s\.\-]/g, '');
 
+  const loadBlog = async () => {
+    const blogPosts = document.getElementById('blogPosts');
+    const template = blogPosts.firstElementChild.innerHTML;
+
+    const response = await fetch('https://api.typewriter.cloud/kiloev/blog/types/post/');
+    const posts = await response.json();
+
+    posts.forEach(post => {
+      blogPosts.innerHTML += template
+        .replace('{{title}}', post.title)
+        .replace('{{date}}', post.fields[0].value)
+        .replace('{{content}}', post.fields[1].value);
+    });
+  }
   const findSkill = () => {
     const input = document.getElementById('findSkill');
     const tags = [].slice.call(document.querySelectorAll('.tag > li'));
@@ -22,6 +36,7 @@
     input.addEventListener('keyup', onChange);
   }
 
+  loadBlog();
   findSkill();
 
 })(document);
