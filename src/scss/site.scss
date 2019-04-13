@@ -274,7 +274,7 @@ a {
 .blog-modal {
     width: 100%;
     height: 100%;
-    padding: $space-md;
+    padding: $space-sm;
     position: fixed;
     top: 0;
     left: 0;
@@ -290,7 +290,7 @@ a {
     .back {
         padding: $space-sm $space-sm $space-sm 0;
         display: inline-block;
-        font-size: $font-size-h4;
+        font-size: $font-size-h3;
         cursor: pointer;
     }
 
