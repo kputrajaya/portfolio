@@ -34,7 +34,7 @@
                     I'm passionate about efficient <strong>problem&nbsp;solving</strong> using robust <strong>system&nbsp;architecture</strong> and agile <strong>product&nbsp;development</strong>.
                 </div>
                 <div class="contact">
-                    <a href="https://bit.ly/hello-kevin" title="Message" target="_blank"><i class="icon-mail"></i></a>
+                    <a href="mailto:hello@kputrajaya.com?subject=Hello, Kevin!" title="Email"><i class="icon-mail"></i></a>
                     <a href="https://www.linkedin.com/in/kputrajaya/" title="LinkedIn" target="_blank"><i class="icon-linkedin"></i></a>
                     <a href="https://github.com/kiloev" title="GitHub" target="_blank"><i class="icon-github"></i></a>
                     <a href="https://twitter.com/kputrajaya" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>
@@ -60,7 +60,7 @@
                             I&nbsp;started as Software&nbsp;Engineer, working on the then-<strong>new&nbsp;storefront</strong> built on top <strong>Phalcon&nbsp;PHP</strong>.
                             I&nbsp;was then tasked to design and build a <strong>REST&nbsp;API</strong> to be consumed by <strong>mobile&nbsp;app</strong>.
                             Later, I&nbsp;developed a service to manage category&nbsp;tree and campaigns using <strong>Django</strong>, deployed into <strong>serverless infrastructure</strong>.
-                            As Head&nbsp;of&nbsp;Engineering, I'm currently leading a system&nbsp;restructure, highlighting a <strong>flexible and scalable core</strong>
+                            As Head&nbsp;of&nbsp;Engineering, I'm currently leading a system&nbsp;restructure, highlighting a <strong>flexible and scalable design</strong>
                             in order to cater to future <strong>business&nbsp;needs and opportunities</strong>.
                         </div>
                     </div>
@@ -163,21 +163,26 @@
         </div>
     </div>
 
-    <div id="blog" class="container gap-b-md pad-md">
+    <div id="blog" class="blog container gap-b-md pad-md">
         <div class="row">
             <div class="col-xs-12">
                 <h2 class="gap-b-sm">Blog</h2>
             </div>
-            <div id="blogPosts" class="col-xs-12 col-md-9">
-                <template>
-                    <div class="post">
-                        <div class="title">
-                            <h3>{{title}}</h3>
-                            <h5>{{date}}</h5>
+            <div class="col-xs-12">
+                <div id="postWrapper" class="row">
+                    <template>
+                        <div class="col-xs-12 col-sm-6">
+                            <a class="post">
+                                <div class="title">
+                                    <h3>{{title}}</h3>
+                                    <h5>{{date}}</h5>
+                                </div>
+                                <div class="preview">{{preview}}</div>
+                                <div class="content">{{content}}</div>
+                            </a>
                         </div>
-                        <div class="content">{{content}}</div>
-                    </div>
-                </template>
+                    </template>
+                </div>
             </div>
         </div>
     </div>
@@ -185,6 +190,13 @@
     <div class="container pad-md pad-t-xl">
         <div class="footer">
             &copy; 2019. <a href="https://github.com/kiloev/heyimkevin">Source on GitHub</a>.
+        </div>
+    </div>
+
+    <div id="blogModal" class="blog-modal">
+        <div class="container">
+            <div id="blogModalBack" class="back">&larr;</div>
+            <div id="blogModalContent"></div>
         </div>
     </div>
 

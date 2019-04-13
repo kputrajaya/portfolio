@@ -1,42 +1,84 @@
 ((document) => {
 
+  // Variables
+  const blogModal = document.getElementById('blogModal');
+  const blogModalContent = document.getElementById('blogModalContent');
+
+  // Helpers
   const stripText = text => text.toLowerCase().replace(/[\s\.\-]/g, '');
+  const addClass = (el, name) => {
+    const regexClass = new RegExp(`\\b${name}\\b`, 'ig');
+    if (regexClass.test(el.className)) return;
+    el.className += ` ${name}`;
+  };
+  const removeClass = (el, name) => {
+    const regexClass = new RegExp(`\\b${name}\\b`, 'ig');
+    el.className = el.className.replace(regexClass, '');
+  };
 
-  const loadBlog = async () => {
-    const blogPosts = document.getElementById('blogPosts');
-    const template = blogPosts.firstElementChild.innerHTML;
-
-    const response = await fetch('https://api.typewriter.cloud/kiloev/blog/types/post/');
+  // Initializations
+  const loadPosts = async () => {
+    const response = await fetch('https://blog-api.kputrajaya.com/master/posts/');
     const posts = await response.json();
+    if (!posts || !posts.length) return;
 
+    const section = document.getElementById('blog');
+    const postWrapper = document.getElementById('postWrapper');
+    const template = postWrapper.firstElementChild.innerHTML;
+    const regexTags = /<[^>]+>/ig;
+
+    postWrapper.innerHTML = '';
     posts.forEach(post => {
-      blogPosts.innerHTML += template
+      postWrapper.innerHTML += template
         .replace('{{title}}', post.title)
-        .replace('{{date}}', post.fields[0].value)
-        .replace('{{content}}', post.fields[1].value);
+        .replace('{{date}}', post.created_at)
+        .replace('{{preview}}', post.content.replace(regexTags, ''))
+        .replace('{{content}}', post.content);
     });
-  }
+    addClass(section, 'show');
+
+    const onClick = (event) => {
+      blogModalContent.innerHTML = event.currentTarget.innerHTML;
+      addClass(blogModal, 'show');
+    };
+
+    postWrapper.childNodes.forEach(el => {
+      const post = el.firstElementChild;
+      if (!post) return;
+      post.addEventListener('click', onClick);
+    });
+  };
   const findSkill = () => {
     const input = document.getElementById('findSkill');
     const tags = [].slice.call(document.querySelectorAll('.tag > li'));
     const map = tags.map(tag => stripText(`${tag.innerHTML}/${tag.dataset.alt || ''}`));
     let timeout;
 
-    const onChange = () => {
+    const onEvent = () => {
       clearTimeout(timeout);
       timeout = setTimeout(() => {
         const query = stripText(input.value);
         map.forEach((text, i) => {
           tags[i].className = text.indexOf(query) !== -1 ? null : 'fade';
         });
-      }, 125);
+      }, 150);
     };
 
-    input.addEventListener('change', onChange);
-    input.addEventListener('keyup', onChange);
-  }
+    input.addEventListener('change', onEvent);
+    input.addEventListener('keyup', onEvent);
+  };
+  const closeModal = () => {
+    const blogModalBack = document.getElementById('blogModalBack');
 
-  loadBlog();
+    const onClick = () => {
+      removeClass(blogModal, 'show');
+    };
+
+    blogModalBack.addEventListener('click', onClick);
+  };
+
+  loadPosts();
   findSkill();
+  closeModal();
 
 })(document);
