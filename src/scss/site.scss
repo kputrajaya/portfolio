@@ -289,9 +289,10 @@ a {
     }
 
     .back {
-        padding: $space-sm $space-sm $space-sm 0;
+        padding: $space-sm $space-md $space-sm 0;
         display: inline-block;
         font-size: $font-size-h2;
+        color: $color-mid-gray;
         cursor: pointer;
     }
 
