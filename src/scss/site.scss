@@ -244,6 +244,7 @@ a {
     border-radius: $border-radius;
     cursor: pointer;
     display: block;
+    -webkit-tap-highlight-color: transparent;
 
     & + & {
         margin-top: $space-sm;

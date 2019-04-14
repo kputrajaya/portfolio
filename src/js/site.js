@@ -1,19 +1,18 @@
 ((document) => {
-
   // Variables
   const blogModal = document.getElementById('blogModal');
-  const blogModalContent = document.getElementById('blogModalContent');
 
   // Helpers
-  const stripText = text => text.toLowerCase().replace(/[\s\.\-]/g, '');
+  const stripText = text => text.toLowerCase().replace(/[\s.-]/g, '');
   const addClass = (el, name) => {
-    const regexClass = new RegExp(`\\b${name}\\b`, 'ig');
-    if (regexClass.test(el.className)) return;
-    el.className += ` ${name}`;
+    const regexClass = new RegExp(`\\b${name}\\b`, 'g');
+    return regexClass.test(el.className)
+      ? el.className
+      : `${el.className} ${name}`;
   };
   const removeClass = (el, name) => {
-    const regexClass = new RegExp(`\\b${name}\\b`, 'ig');
-    el.className = el.className.replace(regexClass, '');
+    const regexClass = new RegExp(`\\b${name}\\b`, 'g');
+    return el.className.replace(regexClass, '');
   };
 
   // Initializations
@@ -24,25 +23,26 @@
 
     const section = document.getElementById('blog');
     const postWrapper = document.getElementById('postWrapper');
+    const blogModalContent = document.getElementById('blogModalContent');
     const template = postWrapper.firstElementChild.innerHTML;
-    const regexTags = /<[^>]+>/ig;
+    const regexHtmlTags = /<[^>]+>/g;
 
     postWrapper.innerHTML = '';
-    posts.forEach(post => {
+    posts.forEach((post) => {
       postWrapper.innerHTML += template
         .replace('{{title}}', post.title)
         .replace('{{date}}', post.created_at)
-        .replace('{{preview}}', post.content.replace(regexTags, ''))
+        .replace('{{preview}}', post.content.replace(regexHtmlTags, ''))
         .replace('{{content}}', post.content);
     });
-    addClass(section, 'show');
+    section.className = addClass(section, 'show');
 
     const onClick = (event) => {
       blogModalContent.innerHTML = event.currentTarget.innerHTML;
-      addClass(blogModal, 'show');
+      blogModal.className = addClass(blogModal, 'show');
     };
 
-    postWrapper.childNodes.forEach(el => {
+    postWrapper.childNodes.forEach((el) => {
       const post = el.firstElementChild;
       if (!post) return;
       post.addEventListener('click', onClick);
@@ -71,14 +71,14 @@
     const blogModalBack = document.getElementById('blogModalBack');
 
     const onClick = () => {
-      removeClass(blogModal, 'show');
+      blogModal.className = removeClass(blogModal, 'show');
     };
 
     blogModalBack.addEventListener('click', onClick);
   };
 
+  // Run
   loadPosts();
   findSkill();
   closeModal();
-
 })(document);

@@ -9,6 +9,7 @@ steps:
         path: /drone/src/node_modules
     commands:
       - npm install
+      - npm test
       - npm run build
   - name: publish
     image: plugins/gh-pages
