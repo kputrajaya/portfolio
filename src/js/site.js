@@ -1,6 +1,6 @@
 ((document) => {
   // Variables
-  const body = document.body;
+  const { body } = document;
 
   // Helpers
   const stripText = text => text.toLowerCase().replace(/[\s.-]/g, '');
