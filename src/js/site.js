@@ -1,6 +1,6 @@
 ((document) => {
   // Variables
-  const blogModal = document.getElementById('blogModal');
+  const body = document.body;
 
   // Helpers
   const stripText = text => text.toLowerCase().replace(/[\s.-]/g, '');
@@ -39,7 +39,7 @@
 
     const onClick = (event) => {
       blogModalContent.innerHTML = event.currentTarget.innerHTML;
-      blogModal.className = addClass(blogModal, 'show');
+      body.className = addClass(body, 'modal');
     };
 
     postWrapper.childNodes.forEach((el) => {
@@ -71,7 +71,7 @@
     const blogModalBack = document.getElementById('blogModalBack');
 
     const onClick = () => {
-      blogModal.className = removeClass(blogModal, 'show');
+      body.className = removeClass(body, 'modal');
     };
 
     blogModalBack.addEventListener('click', onClick);

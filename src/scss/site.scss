@@ -17,6 +17,10 @@ html, body {
     -moz-transition: opacity $animation-delay;
     -o-transition: opacity $animation-delay;
     transition: opacity $animation-delay;
+
+    &.modal {
+        overflow: hidden;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -238,53 +242,58 @@ a {
     }
 }
 
-.post {
-    padding: $space-sm;
-    border: 1px dashed $color-light-gray;
-    border-radius: $border-radius;
-    cursor: pointer;
-    display: block;
-    -webkit-tap-highlight-color: transparent;
+.post-wrapper {
+    margin-bottom: -$space-sm;
 
-    & + & {
-        margin-top: $space-sm;
+    & > div {
+        margin-bottom: $space-sm;
     }
 
-    .title {
-        h3 {
-            margin: -3px 0 0;
+    .post {
+        padding: $space-sm;
+        border: 1px dashed $color-light-gray;
+        border-radius: $border-radius;
+        cursor: pointer;
+        display: block;
+        -webkit-tap-highlight-color: transparent;
+
+        .title {
+            h3 {
+                margin: -3px 0 0;
+            }
+
+            h5 {
+                margin: -6px 0 5px;
+                color: $color-mid-gray;
+            }
         }
 
-        h5 {
-            margin: -6px 0 5px;
-            color: $color-mid-gray;
+        .preview {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
-    }
 
-    .preview {
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-    }
-
-    .content {
-        display: none;
+        .content {
+            display: none;
+        }
     }
 }
 
 .blog-modal {
     width: 100%;
     height: 100%;
-    padding: 0 $space-md;
+    padding: 0 $space-md $space-lg;
     position: fixed;
     top: 0;
     left: 0;
     background: $color-white;
     border: none;
+    overflow: auto;
     z-index: 3;
     display: none;
 
-    &.show {
+    body.modal > & {
         display: block;
     }
 
@@ -299,6 +308,7 @@ a {
     .title {
         h3 {
             margin: -3px 0 0;
+            font-size: $font-size-h2;
         }
 
         h5 {
@@ -316,7 +326,7 @@ a {
         line-height: 2;
 
         p {
-            margin: $space-sm 0 0;
+            margin: $space-md 0 0;
         }
 
         @media only screen and (min-width: 48em) {
