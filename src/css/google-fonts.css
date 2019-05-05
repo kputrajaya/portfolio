@@ -1,6 +1,7 @@
 /* cyrillic-ext */
 @font-face {
   font-family: 'Merriweather';
+  font-display: swap;
   font-style: normal;
   font-weight: 400;
   src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v20/u-440qyriQwlOrhSvowK_l5-cSZMZ-Y.woff2) format('woff2');
@@ -9,6 +10,7 @@
 /* cyrillic */
 @font-face {
   font-family: 'Merriweather';
+  font-display: swap;
   font-style: normal;
   font-weight: 400;
   src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v20/u-440qyriQwlOrhSvowK_l5-eCZMZ-Y.woff2) format('woff2');
@@ -17,6 +19,7 @@
 /* vietnamese */
 @font-face {
   font-family: 'Merriweather';
+  font-display: swap;
   font-style: normal;
   font-weight: 400;
   src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v20/u-440qyriQwlOrhSvowK_l5-cyZMZ-Y.woff2) format('woff2');
@@ -25,6 +28,7 @@
 /* latin-ext */
 @font-face {
   font-family: 'Merriweather';
+  font-display: swap;
   font-style: normal;
   font-weight: 400;
   src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v20/u-440qyriQwlOrhSvowK_l5-ciZMZ-Y.woff2) format('woff2');
@@ -33,6 +37,7 @@
 /* latin */
 @font-face {
   font-family: 'Merriweather';
+  font-display: swap;
   font-style: normal;
   font-weight: 400;
   src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v20/u-440qyriQwlOrhSvowK_l5-fCZM.woff2) format('woff2');
@@ -41,6 +46,7 @@
 /* cyrillic-ext */
 @font-face {
   font-family: 'Merriweather';
+  font-display: swap;
   font-style: normal;
   font-weight: 900;
   src: local('Merriweather Black'), local('Merriweather-Black'), url(https://fonts.gstatic.com/s/merriweather/v20/u-4n0qyriQwlOrhSvowK_l52_wFZVcf6lvg.woff2) format('woff2');
@@ -49,6 +55,7 @@
 /* cyrillic */
 @font-face {
   font-family: 'Merriweather';
+  font-display: swap;
   font-style: normal;
   font-weight: 900;
   src: local('Merriweather Black'), local('Merriweather-Black'), url(https://fonts.gstatic.com/s/merriweather/v20/u-4n0qyriQwlOrhSvowK_l52_wFZXMf6lvg.woff2) format('woff2');
@@ -57,6 +64,7 @@
 /* vietnamese */
 @font-face {
   font-family: 'Merriweather';
+  font-display: swap;
   font-style: normal;
   font-weight: 900;
   src: local('Merriweather Black'), local('Merriweather-Black'), url(https://fonts.gstatic.com/s/merriweather/v20/u-4n0qyriQwlOrhSvowK_l52_wFZV8f6lvg.woff2) format('woff2');
@@ -65,6 +73,7 @@
 /* latin-ext */
 @font-face {
   font-family: 'Merriweather';
+  font-display: swap;
   font-style: normal;
   font-weight: 900;
   src: local('Merriweather Black'), local('Merriweather-Black'), url(https://fonts.gstatic.com/s/merriweather/v20/u-4n0qyriQwlOrhSvowK_l52_wFZVsf6lvg.woff2) format('woff2');
@@ -73,6 +82,7 @@
 /* latin */
 @font-face {
   font-family: 'Merriweather';
+  font-display: swap;
   font-style: normal;
   font-weight: 900;
   src: local('Merriweather Black'), local('Merriweather-Black'), url(https://fonts.gstatic.com/s/merriweather/v20/u-4n0qyriQwlOrhSvowK_l52_wFZWMf6.woff2) format('woff2');
@@ -81,6 +91,7 @@
 /* arabic */
 @font-face {
   font-family: 'Tajawal';
+  font-display: swap;
   font-style: normal;
   font-weight: 500;
   src: local('Tajawal Medium'), local('Tajawal-Medium'), url(https://fonts.gstatic.com/s/tajawal/v2/Iurf6YBj_oCad4k1l8KiHrRpiYlJ.woff2) format('woff2');
@@ -89,6 +100,7 @@
 /* latin */
 @font-face {
   font-family: 'Tajawal';
+  font-display: swap;
   font-style: normal;
   font-weight: 500;
   src: local('Tajawal Medium'), local('Tajawal-Medium'), url(https://fonts.gstatic.com/s/tajawal/v2/Iurf6YBj_oCad4k1l8KiHrFpiQ.woff2) format('woff2');
