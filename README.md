@@ -11,8 +11,7 @@ My current portfolio/resume website.
 - [Flexbox Grid](http://flexboxgrid.com/)
 - [Google Fonts](https://fonts.google.com/)
 - [Fontello](https://fontello.com/)
-- [GitHub Pages](https://pages.github.com/)
-- [Drone](https://drone.io/)
+- [Vercel](https://vercel.com/)
 
 ## How to Use
 
