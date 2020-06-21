@@ -131,24 +131,29 @@ a {
         border-bottom: none;
         display: inline-block;
 
-        i {
+        span {
             width: $contact-size;
-            font-size: $font-size-h5;
-            color: $color-white;
-            text-align: center;
-            line-height: $contact-size;
+            height: $contact-size;
             background: $color-red;
             border-radius: 50%;
-            display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             position: relative;
             -webkit-transition: top $animation-delay;
             -moz-transition: top $animation-delay;
             -o-transition: top $animation-delay;
             transition: top $animation-delay;
+
+            svg {
+                width: $contact-icon-size;
+                height: $contact-icon-size;
+                fill: $color-white;
+            }
         }
 
         &:hover {
-            i {
+            span {
                 top: -2px;
             }
         }
