@@ -41,11 +41,7 @@ export const EXPERIENCES = [
     end: null,
     body: (
       <p>
-        I&nbsp;started as Software&nbsp;Engineer, working on the then-<strong>new&nbsp;storefront</strong> built on top <strong>Phalcon&nbsp;PHP</strong>.
-        I&nbsp;was then tasked to design and build a <strong>REST&nbsp;API</strong> to be consumed by <strong>mobile&nbsp;app</strong>.
-        Later, I&nbsp;developed a service to manage category&nbsp;tree and campaigns using <strong>Django</strong>, deployed into <strong>serverless infrastructure</strong>.
-        As Head&nbsp;of&nbsp;Engineering, I'm currently leading a system&nbsp;restructure, highlighting a <strong>flexible and scalable design</strong>
-        in order to cater to future <strong>business&nbsp;needs and opportunities</strong>.
+        I&nbsp;started as Software&nbsp;Engineer, working on the then-<strong>new&nbsp;storefront</strong> built on top <strong>Phalcon&nbsp;PHP</strong>. I&nbsp;was then tasked to design and build a <strong>REST&nbsp;API</strong> to be consumed by <strong>mobile&nbsp;app</strong>. Later, I&nbsp;developed a service to manage category&nbsp;tree and campaigns using <strong>Django</strong>, deployed into <strong>serverless infrastructure</strong>. As Head&nbsp;of&nbsp;Engineering, I'm currently leading a system&nbsp;restructure, highlighting a <strong>flexible and scalable design</strong> in order to cater to future <strong>business&nbsp;needs and opportunities</strong>.
       </p>
     )
   },
@@ -57,10 +53,7 @@ export const EXPERIENCES = [
     end: 2015,
     body: (
       <p>
-        I&nbsp;handled <strong>remote&nbsp;clients</strong> in Australia without close&nbsp;supervision.
-        I've worked on an <strong>investment research</strong> website, <strong>data&nbsp;entry</strong> desktop&nbsp;app, and console&nbsp;apps, such as <strong>web&nbsp;scrapers</strong>.
-        Working there, I&nbsp;learned about <strong>Microsoft&nbsp;stack</strong> and some good engineering&nbsp;practices.
-        As Team&nbsp;Lead, I&nbsp;also learned non-technical skills like <strong>good&nbsp;communication</strong>, <strong>project&nbsp;estimation</strong>, and <strong>self-management</strong>.
+        I&nbsp;handled <strong>remote&nbsp;clients</strong> in Australia without close&nbsp;supervision. I've worked on an <strong>investment research</strong> website, <strong>data&nbsp;entry</strong> desktop&nbsp;app, and console&nbsp;apps, such as <strong>web&nbsp;scrapers</strong>. Working there, I&nbsp;learned about <strong>Microsoft&nbsp;stack</strong> and some good engineering&nbsp;practices. As Team&nbsp;Lead, I&nbsp;also learned non-technical skills like <strong>good&nbsp;communication</strong>, <strong>project&nbsp;estimation</strong>, and <strong>self-management</strong>.
       </p>
     )
   },
@@ -72,11 +65,7 @@ export const EXPERIENCES = [
     end: 2013,
     body: (
       <p>
-        Despite my interest and achievements in <strong>programming since high&nbsp;school</strong>, I&nbsp;chose to study <strong>Electrical&nbsp;Engineering</strong>
-        with <strong>computer</strong> and <strong>control&nbsp;system</strong> as my depths.
-        I&nbsp;also took part in several student groups, one of them being <strong>Divisi&nbsp;Komputer HME ITB</strong>
-        in which I&nbsp;started to learn <strong>web&nbsp;development</strong>.
-        In the last years, I&nbsp;started doing <strong>freelance&nbsp;jobs</strong> and <strong>tried to build a startup</strong>.
+        Despite my interest and achievements in <strong>programming since high&nbsp;school</strong>, I&nbsp;chose to study <strong>Electrical&nbsp;Engineering</strong> with <strong>computer</strong> and <strong>control&nbsp;system</strong> as my depths. I&nbsp;also took part in several student groups, one of them being <strong>Divisi&nbsp;Komputer HME ITB</strong> in which I&nbsp;started to learn <strong>web&nbsp;development</strong>. In the last years, I&nbsp;started doing <strong>freelance&nbsp;jobs</strong> and <strong>tried to build a startup</strong>.
       </p>
     )
   }
