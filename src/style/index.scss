@@ -42,6 +42,12 @@ b {
   font-weight: 900;
 }
 
+// Pane
+.p {
+
+}
+
+// Contact
 .c {
   margin-left: $gap-sm;
   border-bottom: none;
@@ -75,13 +81,14 @@ b {
   }
 }
 
+// Experience
 .e {
   padding: $gap-sm 0 $gap-sm $gap-md;
   border-left: 4px solid $color-light;
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     width: 12px;
     height: 12px;
     background: $color-red;
@@ -101,6 +108,7 @@ b {
   }
 }
 
+// Skill
 .s {
 
 }

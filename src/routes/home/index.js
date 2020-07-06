@@ -5,14 +5,13 @@ import Experience from '../../components/experience';
 import Skill from '../../components/skill';
 import SvgLogo from '../../components/svgr/logo';
 import { CONTACTS, EXPERIENCES, SKILLS } from '../../components/data';
-import style from './style';
 
 const Home = () => {
 
 
   return (
     <div>
-      <div class={style.section}>
+      <div class="p">
         <SvgLogo />
       <h1>Kevin Putrajaya</h1>
       <h3>Software Engineer &bull; Jakarta, ID</h3>
@@ -21,13 +20,13 @@ const Home = () => {
           { CONTACTS.map((contact) => <Contact {...contact} />) }
         </div>
       </div>
-      <div class={style.section}>
+      <div class="p">
         <h2>Experiences</h2>
         <div>
           { EXPERIENCES.map((experience) => <Experience {...experience} />) }
         </div>
       </div>
-      <div class={style.section}>
+      <div class="p">
         <h2>Skills</h2>
         <div>
           { SKILLS.map((skill) => <Skill {...skill} />) }
