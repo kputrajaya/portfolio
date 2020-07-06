@@ -86,174 +86,174 @@ export const SKILLS = [
   {
     title: 'Fullstack development',
     alts: [
-      'Backend',
-      'Frontend',
-      'Website',
-      'Web app',
-      'Mobile app',
-      'REST API'
+      'backend',
+      'frontend',
+      'website',
+      'web app',
+      'mobile app',
+      'rest api'
     ],
     strong: true
   },
   {
     title: 'System architecture',
     alts: [
-      'System design',
-      'Software design',
-      'Software architecture'
+      'system design',
+      'software design',
+      'software architecture'
     ],
     strong: true
   },
   {
     title: 'Database design',
     alts: [
-      'DB design',
-      'Schema design'
+      'db design',
+      'schema design'
     ]
   },
   {
     title: 'CI/CD',
     alts: [
-      'Continuous',
-      'Integration',
-      'Delivery',
-      'Deployment',
-      'Linting',
-      'Unit testing'
+      'continuous',
+      'integration',
+      'delivery',
+      'deployment',
+      'linting',
+      'unit testing'
     ]
   },
   {
     title: 'Serverless',
     alts: [
-      'Lambda',
-      'Cloud Functions'
+      'lambda',
+      'cloud functions'
     ]
   },
   {
     title: 'Container',
     alts: [
-      'Docker'
+      'docker'
     ]
   },
   {
     title: 'SQL',
     alts: [
-      'Relational database',
-      'RDBMS',
-      'PostgreSQL',
-      'MySQL',
-      'SQL Server'
+      'relational database',
+      'rdbms',
+      'postgresql',
+      'mysql',
+      'sql server'
     ]
   },
   {
     title: 'NoSQL',
     alts: [
-      'Document database',
-      'DynamoDB',
-      'MongoDB'
+      'document database',
+      'dynamodb',
+      'mongodb'
     ]
   },
   {
     title: 'Caching',
     alts: [
-      'Cache',
-      'Redis'
+      'cache',
+      'redis'
     ]
   },
   {
     title: 'Queueing',
     alts: [
-      'Celery',
-      'SQS'
+      'celery',
+      'sqs'
     ]
   },
   {
     title: 'Cloud infrastructure',
     alts: [
-      'CloudFormation',
-      'Amazon Web Services',
-      'AWS',
-      'Google Cloud Platform',
-      'GCP'
+      'cloudformation',
+      'amazon web services',
+      'aws',
+      'google cloud platform',
+      'gcp'
     ],
     strong: true
   },
   {
     title: 'Tag Manager',
     alts: [
-      'Google Tag Manager',
-      'GTM'
+      'google tag manager',
+      'gtm'
     ]
   },
   {
     title: 'Analytics',
     alts: [
-      'Google Analytics',
-      'GA',
-      'Universal Analytics',
-      'UA'
+      'google analytics',
+      'ga',
+      'universal analytics',
+      'ua'
     ]
   },
   {
     title: 'Python',
     alts: [
-      'Flask',
-      'Bottle',
-      'Django'
+      'flask',
+      'bottle',
+      'django'
     ],
     strong: true
   },
   {
     title: 'JavaScript',
     alts: [
-      'JS',
-      'ECMAScript',
-      'ES',
-      'Node.js',
-      'NodeJS',
-      'Vue.js',
-      'VueJS',
-      'React.js',
-      'ReactJS',
-      'Preact',
-      'jQuery'
+      'js',
+      'ecmascript',
+      'es',
+      'node.js',
+      'nodejs',
+      'vue.js',
+      'vuejs',
+      'react.js',
+      'reactjs',
+      'preact',
+      'jquery'
     ],
     strong: true
   },
   {
     title: 'C#',
     alts: [
-      'ASP.NET MVC/LINQ/Entity Framework'
+      'asp.net mvc/linq/entity framework'
     ]
   },
   {
     title: 'PHP',
     alts: [
-      'SlimPHP',
-      'PhalconPHP',
-      'CodeIgniter'
+      'slimphp',
+      'phalconphp',
+      'codeigniter'
     ]
   },
   {
     title: 'Stylesheets',
     alts: [
-      'CSS',
-      'SCSS',
-      'Sass',
-      'LESS',
-      'Stylus',
-      'Grid system',
-      'Flexbox',
-      'Responsive',
-      'Bootstrap',
-      'UI/UX'
+      'css',
+      'scss',
+      'sass',
+      'less',
+      'stylus',
+      'grid system',
+      'flexbox',
+      'responsive',
+      'bootstrap',
+      'ui/ux'
     ]
   },
   {
     title: 'Mobile App',
     alts: [
-      'React Native',
-      'Ionic'
+      'react native',
+      'ionic'
     ]
   }
 ];
