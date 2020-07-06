@@ -15,20 +15,20 @@ const Home = () => {
       <div class={style.section}>
         <SvgLogo />
       <h1>Kevin Putrajaya</h1>
-      <h2>Software Engineer &bull; Jakarta, ID</h2>
+      <h3>Software Engineer &bull; Jakarta, ID</h3>
         <p>I'm passionate about efficient <b>problem&nbsp;solving</b> using robust <b>system&nbsp;architecture</b> and agile <b>product&nbsp;development</b>.</p>
         <div>
           { CONTACTS.map((contact) => <Contact {...contact} />) }
         </div>
       </div>
       <div class={style.section}>
-        <h3>Experiences</h3>
+        <h2>Experiences</h2>
         <div>
           { EXPERIENCES.map((experience) => <Experience {...experience} />) }
         </div>
       </div>
       <div class={style.section}>
-        <h3>Skills</h3>
+        <h2>Skills</h2>
         <div>
           { SKILLS.map((skill) => <Skill {...skill} />) }
         </div>
