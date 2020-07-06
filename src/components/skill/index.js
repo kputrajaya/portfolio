@@ -1,8 +1,7 @@
 import { h } from 'preact';
-import style from './style';
 
 const Skill = ({ title, strong }) => (
-	<span class={style.s}>
+	<span class="s">
     {
       strong
         ? <strong>{title}</strong>

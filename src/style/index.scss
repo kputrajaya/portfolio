@@ -40,3 +40,66 @@ h6 {
 b {
   font-weight: 900;
 }
+
+.c {
+  margin-left: $gap-sm;
+  border-bottom: none;
+  display: inline-block;
+
+  span {
+    width: $contact-size;
+    height: $contact-size;
+    background: $color-red;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    svg {
+      width: $contact-icon-size;
+      height: $contact-icon-size;
+      fill: $color-white;
+    }
+  }
+
+  &:hover {
+    span {
+      top: -2px;
+    }
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.e {
+  padding: $gap-sm 0 $gap-sm $gap-md;
+  border-left: 4px solid $color-light;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: $color-red;
+    border-radius: 50%;
+    position: absolute;
+    top: 28px;
+    left: -38px;
+  }
+
+  h4 {
+      margin: 0;
+  }
+
+  h5 {
+      margin: -3px 0;
+      color: $color-gray;
+  }
+}
+
+.s {
+
+}
