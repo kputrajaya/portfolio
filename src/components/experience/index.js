@@ -1,10 +1,10 @@
 import { h } from 'preact';
 
 const Experience = ({ company, link, title, start, end, body }) => (
-  <div class="e">
+  <div class="experience">
     <div>
-      <h3><a href={link}>{company}</a></h3>
-      <h4>{title} &bull; {start}&ndash;{end || 'now'}</h4>
+      <h3><a href={link} title={company} target="_blank">{company}</a></h3>
+      <h4 class="subtitle">{title}<span class="bull" />{start}&ndash;{end || 'now'}</h4>
     </div>
     {body}
   </div>

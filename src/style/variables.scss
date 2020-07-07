@@ -1,14 +1,17 @@
-$-font-base: 15px;
+$-font-base: 16px;
 $-font-ratio: 1.2;
 
-$gap-xs: 10px;
-$gap-sm: 15px;
-$gap-md: 30px;
-$gap-lg: 45px;
-$gap-xl: 90px;
+$-gap-base: 16px;
+$-gap-ratio: 2;
 
-$fam-sans: 'Tajawal', sans-serif;
-$fam-serif: 'Merriweather', serif;
+$gap-x2s: $-gap-base / $-gap-ratio / $-gap-ratio / $-gap-ratio;
+$gap-xs: $-gap-base / $-gap-ratio / $-gap-ratio;
+$gap-sm: $-gap-base / $-gap-ratio;
+$gap-md: $-gap-base;
+$gap-lg: $-gap-base * $-gap-ratio;
+$gap-xl: $-gap-base * $-gap-ratio * $-gap-ratio;
+
+$fam-sans: 'Open Sans', sans-serif;
 
 $font-xs: $-font-base / $-font-ratio / $-font-ratio;
 $font-sm: $-font-base / $-font-ratio;
@@ -18,16 +21,19 @@ $font-xl: $-font-base * $-font-ratio * $-font-ratio;
 $font-x2l: $-font-base * $-font-ratio * $-font-ratio * $-font-ratio;
 $font-x3l: $-font-base * $-font-ratio * $-font-ratio * $-font-ratio * $-font-ratio;
 
-$color-light: #D0D0D0;
-$color-gray: #8F8F8F;
-$color-dark: #333333;
+$weight-normal: 400;
+$weight-bold: 600;
+
 $color-red: #CA3939;
 $color-white: #F5F5F5;
+$color-light: #CCC;
+$color-gray: #888;
+$color-dark: #333;
 
 $line-height: 1.8;
 
-$border-radius: 8px;
+$transition-short: 200ms;
 
-$logo-size: 80px;
+$container-max-width: 720px;
 $contact-size: 38px;
 $contact-icon-size: 20px;

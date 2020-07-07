@@ -1,27 +1,37 @@
 @import './variables';
+@import './mixins';
+
+
+// Elements
 
 * {
-  box-sizing: border-box;
+  font-family: $fam-sans;
 }
 
 html, body {
-  font-family: $fam-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   font-size: $font-md;
-  font-weight: 400;
+  font-weight: $weight-normal;
   color: $color-dark;
+  background: $color-white;
   line-height: $line-height;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 0 -1px;
+  margin: 0;
+  padding: 0;
   font-family: $fam-sans;
-  font-weight: 500;
+  font-weight: $weight-bold;
   color: $color-red;
 }
 h1 {
+  margin-left: - $gap-x2s;
   font-size: $font-x3l;
 }
 h2 {
+  margin-left: - $gap-x2s;
   font-size: $font-x2l;
 }
 h3 {
@@ -37,20 +47,84 @@ h6 {
   font-size: $font-sm;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted $color-gray;
+}
+
 b {
-  font-weight: 900;
+  font-weight: $weight-bold;
 }
 
-// Pane
-.p {
-  margin: $gap-md 0;
+
+// Reusable
+
+.subtitle {
+  color: $color-gray;
+  text-transform: uppercase;
 }
 
-// Contact
-.c {
-  margin-left: $gap-sm;
+.input {
+  padding: $gap-xs $gap-sm;
+  background: $color-light;
+  border-radius: $gap-xs;
+  outline: none;
+  border: 0;
+}
+
+.bull {
+  &::before {
+    content: '•';
+    margin: 0 $gap-sm;
+    display: inline-block;
+  }
+}
+
+.container {
+  max-width: $container-max-width;
+  padding: 0 $gap-md;
+  margin: 0 auto;
+}
+
+.section {
+  margin: 1.5 * $gap-xl 0;
+  position: relative;
+
+  h2 {
+    margin: 0 0 $gap-md;
+    font-size: $font-xl;
+  }
+}
+
+
+// Single-use
+
+.intro {
+  h1 {
+    margin: $gap-md 0 $gap-xs;
+  }
+
+  h4 {
+    font-size: $font-md;
+  }
+
+  p {
+    max-width: $container-max-width * 2 / 3;
+    margin: $gap-md 0 $gap-lg;
+  }
+}
+
+.contact {
+  margin-left: $gap-md;
   border-bottom: none;
   display: inline-block;
+  @include transition(top $transition-short);
 
   span {
     width: $contact-size;
@@ -61,6 +135,8 @@ b {
     align-items: center;
     justify-content: center;
     position: relative;
+    top: 0;
+    @include transition(top $transition-short);
 
     svg {
       width: $contact-icon-size;
@@ -69,47 +145,81 @@ b {
     }
   }
 
-  &:hover {
-    span {
-      top: -2px;
-    }
-  }
-
   &:first-child {
     margin-left: 0;
   }
+
+  &:hover {
+    span {
+      top: - $gap-x2s;
+    }
+  }
 }
 
-// Experience
-.e {
-  padding: $gap-sm 0 $gap-sm $gap-md;
-  border-left: 4px solid $color-light;
+.experience {
+  padding: $gap-sm 0 $gap-lg $gap-md;
+  border-left: $gap-xs solid $color-light;
   position: relative;
 
+  &:first-child {
+    padding-top: $gap-sm;
+  }
+
   &::before {
-    content: "";
-    width: 12px;
-    height: 12px;
-    background: $color-red;
+    content: '';
+    width: 1.5 * $gap-sm;
+    height: 1.5 * $gap-sm;
+    background: $color-gray;
     border-radius: 50%;
     position: absolute;
-    top: 28px;
-    left: -38px;
+    top: 20px;
+    left: - (1.5 * $gap-sm + $gap-xs) / 2;
+  }
+
+  h3 {
+    margin: 0 0 $gap-xs;
+    font-size: $font-lg;
   }
 
   h4 {
-    margin: 0;
+    margin: 0 0 $gap-sm;
+    font-size: $font-sm;
   }
 
-  h5 {
-    margin: -3px 0;
-    color: $color-gray;
+  @media (min-width: $container-max-width) {
+    & {
+      padding-left: $gap-lg;
+    }
   }
 }
 
-// Skill
-.s {
-  &.h {
-    opacity: .3;
+.search {
+  width: $gap-xl;
+  font-size: $font-sm;
+  position: absolute;
+  top: 11px;
+  right: 0;
+  @include transition(width $transition-short);
+
+  &:focus {
+    width: 1.5 * $gap-xl;
   }
+}
+
+.skill {
+  margin: $gap-sm $gap-sm 0 0;
+  padding: $gap-x2s $gap-sm;
+  background: $color-light;
+  border-radius: $gap-xs;
+  display: inline-block;
+  @include transition(opacity $transition-short);
+
+  &.hidden {
+    opacity: .33;
+  }
+}
+
+.footer {
+  font-size: $font-sm;
+  color: $color-gray;
 }

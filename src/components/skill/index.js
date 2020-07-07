@@ -1,7 +1,7 @@
 import { h } from 'preact';
 import { useMemo } from 'preact/hooks';
 
-const Skill = ({ title, alts, strong, query }) => {
+const Skill = ({ title, alts, bold, query }) => {
   const relevant = useMemo(() => (
     !query ||
     title.toLowerCase().indexOf(query) >= 0 ||
@@ -9,10 +9,10 @@ const Skill = ({ title, alts, strong, query }) => {
   ), [title, alts, query]);
 
   return (
-    <span class={`s ${relevant ? '' : 'h'}`}>
+    <span class={`skill ${relevant ? '' : 'hidden'}`}>
       {
-        strong
-          ? <strong>{title}</strong>
+        bold
+          ? <b>{title}</b>
           : title
       }
     </span>

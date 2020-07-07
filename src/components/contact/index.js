@@ -1,11 +1,28 @@
 import { h } from 'preact';
 
-const Contact = ({ title, svg, link }) => (
-  <a class="c" href={link} title={title}>
-    <span>
-      {svg}
-    </span>
-  </a>
-);
+import SvgContactEmail from '../svgr/contact-email';
+import SvgContactGitHub from '../svgr/contact-github';
+import SvgContactInstagram from '../svgr/contact-instagram';
+import SvgContactLinkedIn from '../svgr/contact-linkedin';
+import SvgContactTwitter from '../svgr/contact-twitter';
+
+const SVG_MAP = {
+  Email: SvgContactEmail,
+  GitHub: SvgContactGitHub,
+  Instagram: SvgContactInstagram,
+  LinkedIn: SvgContactLinkedIn,
+  Twitter: SvgContactTwitter
+};
+
+const Contact = ({ title, link }) => {
+  const Svg = SVG_MAP[title];
+  return (
+    <a class="contact" href={link} title={title} target="_blank">
+      <span>
+        {Svg ? <Svg /> : null}
+      </span>
+    </a>
+  );
+};
 
 export default Contact;
