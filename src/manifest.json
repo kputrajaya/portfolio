@@ -1,11 +1,11 @@
 {
   "name": "Kevin Putrajaya",
-  "short_name": "portfolio",
+  "short_name": "Kevin Putrajaya",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#fff",
-  "theme_color": "#673ab8",
+  "background_color": "#F5F5F5",
+  "theme_color": "#CA3939",
   "icons": [
     {
       "src": "/assets/icons/android-chrome-192x192.png",
