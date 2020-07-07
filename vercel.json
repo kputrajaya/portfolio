@@ -1,4 +1,15 @@
 {
+  "headers": [
+    {
+      "source": "/(.*)\.(css|ico|jpeg|jpg|js|png)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "s-maxage=604800"
+        }
+      ]
+    }
+  ],
   "redirects": [
     {
       "source": "/(ar|algorhythm)",
