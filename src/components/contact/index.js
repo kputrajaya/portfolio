@@ -17,7 +17,7 @@ const SVG_MAP = {
 const Contact = ({ title, link }) => {
   const Svg = SVG_MAP[title];
   return (
-    <a class="contact" href={link} title={title} target={link.startsWith('http') ? '_blank' : '_self'} rel="noreferrer">
+    <a class="contact" href={link} title={title} target={link.startsWith('mailto:') ? '_self' : '_blank'} rel="noreferrer">
       <span>
         {Svg ? <Svg /> : null}
       </span>

@@ -6,7 +6,7 @@ import Experience from './experience';
 import Skill from './skill';
 import SvgLogo from './svgr/logo';
 
-import data from '../../data';
+import data from '../../portfolio-data';
 
 const App = () => {
   const [query, setQuery] = useState();
