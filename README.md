@@ -1,36 +1,22 @@
-# Portfolio
+# portfolio
 
-My current portfolio/resume website.
+## CLI Commands
 
-## Built With
+``` bash
+# install dependencies
+npm install
 
-- [Webpack](https://webpack.js.org/)
-- [Babel](https://babeljs.io/)
-- [Sass](https://sass-lang.com/)
-- [Normalize.css](https://necolas.github.io/normalize.css/)
-- [Flexbox Grid](http://flexboxgrid.com/)
-- [Google Fonts](https://fonts.google.com/)
-- [Fontello](https://fontello.com/)
-- [Vercel](https://vercel.com/)
+# serve with hot reload at localhost:8080
+npm run dev
 
-## How to Use
+# build for production with minification
+npm run build
 
-To serve the site on your local machine:
+# test the production build locally
+npm run serve
 
-```
-$ npm install
-$ npm run server
+# run tests with jest and preact-render-spy 
+npm run test
 ```
 
-To build Webpack:
-
-```
-$ npm run build
-```
-
-
-To watch for file changes and rebuild Webpack:
-
-```
-$ npm run watch
-```
+For detailed explanation on how things work, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
