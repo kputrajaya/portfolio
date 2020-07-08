@@ -1,25 +1,27 @@
+@import './utils';
+
 $-font-base: 16px;
 $-font-ratio: 1.2;
 
 $-gap-base: 16px;
 $-gap-ratio: 2;
 
-$gap-x2s: $-gap-base / $-gap-ratio / $-gap-ratio / $-gap-ratio;
-$gap-xs: $-gap-base / $-gap-ratio / $-gap-ratio;
-$gap-sm: $-gap-base / $-gap-ratio;
+$gap-x2s: $-gap-base * power($-gap-ratio, -3);
+$gap-xs: $-gap-base * power($-gap-ratio, -2);
+$gap-sm: $-gap-base * power($-gap-ratio, -1);
 $gap-md: $-gap-base;
-$gap-lg: $-gap-base * $-gap-ratio;
-$gap-xl: $-gap-base * $-gap-ratio * $-gap-ratio;
+$gap-lg: $-gap-base * power($-gap-ratio, 1);
+$gap-xl: $-gap-base * power($-gap-ratio, 2);
 
 $fam-sans: 'Open Sans', sans-serif;
 
-$font-xs: $-font-base / $-font-ratio / $-font-ratio;
-$font-sm: $-font-base / $-font-ratio;
+$font-xs: $-font-base * power($-font-ratio, -2);
+$font-sm: $-font-base * power($-font-ratio, -1);
 $font-md: $-font-base;
-$font-lg: $-font-base * $-font-ratio;
-$font-xl: $-font-base * $-font-ratio * $-font-ratio;
-$font-x2l: $-font-base * $-font-ratio * $-font-ratio * $-font-ratio;
-$font-x3l: $-font-base * $-font-ratio * $-font-ratio * $-font-ratio * $-font-ratio;
+$font-lg: $-font-base * power($-font-ratio, 1);
+$font-xl: $-font-base * power($-font-ratio, 2);
+$font-x2l: $-font-base * power($-font-ratio, 3);
+$font-x3l: $-font-base * power($-font-ratio, 4);
 
 $weight-normal: 400;
 $weight-bold: 600;
