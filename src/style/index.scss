@@ -77,6 +77,10 @@ b {
 .subtitle {
   color: $color-gray;
   text-transform: uppercase;
+
+  @media(prefers-color-scheme: dark) {
+    color: dark-mode($color-gray);
+  }
 }
 
 .input {
@@ -129,7 +133,7 @@ b {
   }
 
   p {
-    max-width: $container-max-width * 2 / 3;
+    max-width: $container-max-width / 1.5;
     margin: $gap-md 0 $gap-lg;
   }
 }
@@ -250,6 +254,7 @@ b {
 }
 
 .footer {
+  margin-bottom: 1.5 * $gap-sm;
   font-size: $font-sm;
   color: $color-gray;
 

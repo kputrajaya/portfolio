@@ -47,10 +47,8 @@ const App = () => {
         </div>
       </div>
 
-      <div class="section">
-        <div class="footer">
-          &copy; {new Date().getFullYear()}. <a href={data.sourceUrl}>Source on GitHub</a>.
-        </div>
+      <div class="footer">
+        &copy; {new Date().getFullYear()}. <a href={data.sourceUrl}>Source on GitHub</a>.
       </div>
     </div>
   );
