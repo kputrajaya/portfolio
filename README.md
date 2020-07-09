@@ -1,22 +1,9 @@
-# portfolio
+# Portfolio
 
-## CLI Commands
+My current portfolio/resume website.
 
-``` bash
-# install dependencies
-npm install
+## Built With
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# test the production build locally
-npm run serve
-
-# run tests with jest and preact-render-spy 
-npm run test
-```
-
-For detailed explanation on how things work, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
+* [Preact](https://preactjs.com/)
+* [SVGR](https://react-svgr.com/)
+* [Vercel](https://vercel.com/)
