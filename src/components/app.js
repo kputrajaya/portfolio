@@ -49,7 +49,7 @@ const App = () => {
 
       <div class="section">
         <div class="footer">
-          &copy; {new Date().getFullYear()}. <a href={data.sourceUrl} target="_blank" rel="noreferrer">Source on GitHub</a>.
+          &copy; {new Date().getFullYear()} Kevin. <a href={data.sourceUrl} target="_blank" rel="noreferrer">Source on GitHub</a>.
         </div>
       </div>
     </div>
