@@ -103,20 +103,18 @@ module.exports = {
       alts: [
         'backend',
         'frontend',
-        'website',
-        'web application',
-        'mobile application',
-        'rest api'
+        'web',
+        'rest api',
+        'mobile application'
       ],
       bold: true
     },
     {
       title: 'System architecture',
       alts: [
-        'system design',
-        'software design',
         'software architecture',
-        'software planning'
+        'software planning',
+        'system design'
       ],
       bold: true
     },
@@ -124,32 +122,34 @@ module.exports = {
       title: 'Database design',
       alts: [
         'db design',
-        'schema design'
+        'schema design',
+        'db migration'
       ]
     },
     {
       title: 'CI/CD',
       alts: [
-        'continuous',
-        'integration',
-        'delivery',
-        'deployment',
+        'continuous integration',
+        'continuous delivery',
+        'continuous deployment',
+        'build',
         'linting',
-        'unit testing',
-        'build'
+        'unit testing'
       ]
     },
     {
       title: 'Serverless',
       alts: [
-        'lambda',
-        'cloud functions'
+        'aws lambda',
+        'google cloud functions'
       ]
     },
     {
       title: 'Container',
       alts: [
-        'docker'
+        'docker',
+        'aws elastic container service',
+        'aws ecs'
       ]
     },
     {
@@ -159,7 +159,8 @@ module.exports = {
         'rdbms',
         'postgresql',
         'mysql',
-        'sql server'
+        'sql server',
+        'query'
       ]
     },
     {
@@ -174,24 +175,36 @@ module.exports = {
       title: 'Caching',
       alts: [
         'cache',
-        'redis'
+        'redis',
+        'memcached'
+      ]
+    },
+    {
+      title: 'Indexing',
+      alts: [
+        'elasticsearch',
+        'es',
+        'apache solr'
       ]
     },
     {
       title: 'Queueing',
       alts: [
         'celery',
+        'rabbitmq',
         'sqs'
       ]
     },
     {
       title: 'Cloud infrastructure',
       alts: [
-        'cloudformation',
         'amazon web services',
         'aws',
         'google cloud platform',
-        'gcp'
+        'gcp',
+        'deployment',
+        'linux machines',
+        'server instances'
       ],
       bold: true
     },
@@ -199,7 +212,8 @@ module.exports = {
       title: 'Tag Manager',
       alts: [
         'google tag manager',
-        'gtm'
+        'gtm',
+        'containers'
       ]
     },
     {
@@ -208,7 +222,9 @@ module.exports = {
         'google analytics',
         'ga',
         'universal analytics',
-        'ua'
+        'ua',
+        'enhanced ecommerce',
+        'tracking'
       ]
     },
     {
@@ -224,15 +240,17 @@ module.exports = {
       title: 'JavaScript',
       alts: [
         'js',
+        'typescript',
+        'ts',
         'ecmascript',
         'es',
         'node.js',
         'nodejs',
-        'vue.js',
-        'vuejs',
         'react.js',
         'reactjs',
         'preact',
+        'vue.js',
+        'vuejs',
         'jquery'
       ],
       bold: true
@@ -240,19 +258,27 @@ module.exports = {
     {
       title: 'C#',
       alts: [
-        'asp.net mvc/linq/entity framework'
+        'dotnet',
+        'dot net',
+        'asp.net mvc',
+        'entity framework',
+        'linq'
       ]
     },
     {
       title: 'PHP',
       alts: [
+        'slim php',
         'slimphp',
+        'phalcon php',
         'phalconphp',
-        'codeigniter'
+        'codeigniter',
+        'ci',
+        'mvc'
       ]
     },
     {
-      title: 'Stylesheets',
+      title: 'CSS',
       alts: [
         'css',
         'scss',
@@ -269,7 +295,10 @@ module.exports = {
     {
       title: 'Mobile App',
       alts: [
+        'android application',
+        'apple ios application',
         'react native',
+        'rn',
         'ionic'
       ]
     }
