@@ -38,7 +38,7 @@ module.exports = {
       end: null,
       body: (
         <p>
-          We built a <b>new commerce core</b> in the shape of a <b>multi-company ERP</b> to add <b>flexibility</b> for the business. We migrated from studio to <b>squad model</b> so people can focus more on the products. We also made <b>Django API</b> for backend, <b>React PWA</b> for frontend, and <b>container deployment</b> as standard for newer projects. Daily, I help in <b>planning</b> and <b>executing</b> business initiatives, as well as <b>supporting</b> and <b>setting directions</b> for the team.
+          We built a <b>new commerce core</b> in the shape of a <b>multi-company ERP</b> to add <b>flexibility</b> for the business. We migrated from studio to <b>squad model</b> so people can focus more on the products. We also made <b>Django API</b> for backend, <b>React PWA</b> for frontend, and <b>container deployment</b> as standard for new projects. Daily, I help management in <b>planning</b> and <b>executing</b> business initiatives, as well as <b>supporting</b> and <b>setting directions</b> for the team.
         </p>
       )
     },
