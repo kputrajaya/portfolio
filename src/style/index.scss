@@ -182,25 +182,9 @@ b {
 .experience {
   padding: $gap-sm 0 $gap-lg $gap-md;
   border-left: $gap-xs solid $color-light;
-  position: relative;
 
   &:first-child {
     padding-top: $gap-sm;
-  }
-
-  &::before {
-    content: '';
-    width: 1.5 * $gap-sm;
-    height: 1.5 * $gap-sm;
-    background: $color-gray;
-    border-radius: 50%;
-    position: absolute;
-    top: 20px;
-    left: - (1.5 * $gap-sm + $gap-xs) / 2;
-
-    @media(prefers-color-scheme: dark) {
-      background: dark-mode($color-gray);
-    }
   }
 
   h3 {
@@ -211,6 +195,26 @@ b {
   h4 {
     margin: 0 0 $gap-sm;
     font-size: $font-sm;
+    position: relative;
+
+    &:first-child {
+      margin-top: 1.5 * $gap-xs;
+    }
+
+    &::before {
+      content: '';
+      width: 1.5 * $gap-sm;
+      height: 1.5 * $gap-sm;
+      background: $color-gray;
+      border-radius: 50%;
+      position: absolute;
+      top: 6px;
+      left: - ($gap-lg + .75 * $gap-sm + .5 * $gap-xs);
+
+      @media(prefers-color-scheme: dark) {
+        background: dark-mode($color-gray);
+      }
+    }
   }
 
   @media (min-width: $container-max-width) {

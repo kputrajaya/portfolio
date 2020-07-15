@@ -34,11 +34,31 @@ module.exports = {
       company: 'Orami',
       link: 'https://www.orami.co.id',
       title: 'Head of Engineering',
-      start: 2015,
+      start: 2018,
       end: null,
       body: (
         <p>
-          I&nbsp;started as Software&nbsp;Engineer, working on the then-<b>new&nbsp;storefront</b> built on top <b>Phalcon&nbsp;PHP</b>. I&nbsp;was then tasked to design and build a <b>REST&nbsp;API</b> to be consumed by <b>mobile&nbsp;app</b>. Later, I&nbsp;developed a service to manage category&nbsp;tree and campaigns using <b>Django</b>, deployed into <b>serverless infrastructure</b>. As Head&nbsp;of&nbsp;Engineering, I'm currently leading a system&nbsp;restructure, highlighting a <b>flexible and scalable design</b> in order to cater to future <b>business&nbsp;needs and opportunities</b>.
+          We built a <b>new commerce core</b> in the shape of a <b>multi-company ERP</b> to add <b>flexibility</b> for the business. We migrated from studio to <b>squad model</b> so people can focus more on the products. We also made <b>Django API</b> for backend, <b>React PWA</b> for frontend, and <b>container deployment</b> as standard for newer projects. Daily, I help in <b>planning</b> and <b>executing</b> business initiatives, as well as <b>supporting</b> and <b>setting directions</b> for the team.
+        </p>
+      )
+    },
+    {
+      title: 'Lead Software Engineer',
+      start: 2016,
+      end: 2018,
+      body: (
+        <p>
+          I&nbsp;was challenged to <b>make more impact</b> by being a team leader, in which I <b>coordinated</b> with CTO, <b>handled requirements</b>, and <b>manage team tasks</b>. One of my projects was a <b>catalog service</b> using <b>Django</b>, deployed into <b>serverless environment</b> using <b>CI/CD</b>.
+        </p>
+      )
+    },
+    {
+      title: 'Software Engineer',
+      start: 2015,
+      end: 2016,
+      body: (
+        <p>
+          First time working in <b>*NIX environments</b>, I&nbsp;helped build the <b>then-new&nbsp;storefront</b> using <b>Phalcon PHP</b>. My next task was to design and build a <b>REST&nbsp;API</b> that will be consumed by our <b>mobile&nbsp;app</b>. It boosted my <b>API design</b> knowledge, which was useful later on.
         </p>
       )
     },
@@ -46,11 +66,21 @@ module.exports = {
       company: 'SIJA Solutions',
       link: 'http://sijasolutions.com.au',
       title: 'Lead Software Engineer',
-      start: 2013,
+      start: 2014,
       end: 2015,
       body: (
         <p>
-          I&nbsp;handled <b>remote&nbsp;clients</b> in Australia without close&nbsp;supervision. I've worked on an <b>investment research</b> website, <b>data&nbsp;entry</b> desktop&nbsp;app, and console&nbsp;apps, such as <b>web&nbsp;scrapers</b>. Working there, I&nbsp;learned about <b>Microsoft&nbsp;stack</b> and some good engineering&nbsp;practices. As Team&nbsp;Lead, I&nbsp;also learned non-technical skills like <b>good&nbsp;communication</b>, <b>project&nbsp;estimation</b>, and <b>self-management</b>.
+          I&nbsp;led a small team and handled <b>international&nbsp;clients</b> with <b>minimal&nbsp;supervision</b>. We were working on an <b>investment research site</b>, with <b>desktop and console apps</b> on the side. I also learned to <b>communicate better</b>, <b>manage tasks</b>, and <b>estimate projects</b>.
+        </p>
+      )
+    },
+    {
+      title: 'Software Engineer',
+      start: 2013,
+      end: 2014,
+      body: (
+        <p>
+          I&nbsp;started with <b>limited knowledge</b> of <b>Microsoft stack</b> and software&nbsp;engineering in general. Shortly after, I&nbsp;picked&nbsp;up more <b>concepts</b> and <b>design&nbsp;patterns</b> such as "repository" and "DAO" while still being <b>closely monitored</b> by the company's founder.
         </p>
       )
     },
@@ -62,7 +92,7 @@ module.exports = {
       end: 2013,
       body: (
         <p>
-          Despite my interest and achievements in <b>programming since high&nbsp;school</b>, I&nbsp;chose to study <b>Electrical&nbsp;Engineering</b> with <b>computer</b> and <b>control&nbsp;system</b> as my depths. I&nbsp;also took part in several student groups, one of them being <b>Divisi&nbsp;Komputer HME ITB</b> in which I&nbsp;started to learn <b>web&nbsp;development</b>. In the last years, I&nbsp;started doing <b>freelance&nbsp;jobs</b> and <b>tried to build a startup</b>.
+          Despite my interest and achievements in <b>programming since high&nbsp;school</b>, I&nbsp;chose to study <b>Electrical&nbsp;Engineering</b>. I&nbsp;also joined  <b>Divisi&nbsp;Komputer HME&nbsp;ITB</b>, in which I&nbsp;started to learn <b>web&nbsp;development</b>. Later on, I&nbsp;started doing <b>freelance&nbsp;jobs</b> and <b>tried to build a startup</b>.
         </p>
       )
     }
@@ -74,8 +104,8 @@ module.exports = {
         'backend',
         'frontend',
         'website',
-        'web app',
-        'mobile app',
+        'web application',
+        'mobile application',
         'rest api'
       ],
       bold: true
@@ -85,7 +115,8 @@ module.exports = {
       alts: [
         'system design',
         'software design',
-        'software architecture'
+        'software architecture',
+        'software planning'
       ],
       bold: true
     },
@@ -104,7 +135,8 @@ module.exports = {
         'delivery',
         'deployment',
         'linting',
-        'unit testing'
+        'unit testing',
+        'build'
       ]
     },
     {
