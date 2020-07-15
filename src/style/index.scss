@@ -227,6 +227,10 @@ b {
         }
       }
 
+      @media print {
+        border: 1px solid $color-light;
+      }
+
       @media screen and (prefers-color-scheme: dark) {
         background: dark-mode($color-gray);
       }
