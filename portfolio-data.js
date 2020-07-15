@@ -280,7 +280,9 @@ module.exports = {
     {
       title: 'CSS',
       alts: [
-        'css',
+        'stylesheets',
+        'styling',
+        'slicing',
         'scss',
         'sass',
         'less',

@@ -16,11 +16,13 @@ const App = () => {
     <div class="container">
       <div class="section">
         <div class="intro">
-          <SvgLogo />
+          <div class="hide-print">
+            <SvgLogo />
+          </div>
           <h1>{data.name}</h1>
           <h4 class="subtitle">{data.title}<span class="bull" />{data.location}</h4>
           {data.description}
-          <div>
+          <div class="hide-print">
             {data.contacts.map((contact) => <Contact {...contact} />)}
           </div>
         </div>
@@ -36,7 +38,7 @@ const App = () => {
       <div class="section">
         <h2>Skills</h2>
         <input
-          class="input search"
+          class="input search hide-print"
           type="text"
           placeholder="Search..."
           value={query}
@@ -47,7 +49,7 @@ const App = () => {
         </div>
       </div>
 
-      <div class="section">
+      <div class="section hide-print">
         <div class="footer">
           &copy; {new Date().getFullYear()} Kevin. <a href={data.sourceUrl} target="_blank" rel="noreferrer">Source on GitHub</a>.
         </div>
