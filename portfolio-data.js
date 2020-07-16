@@ -80,7 +80,7 @@ module.exports = {
       end: 2014,
       body: (
         <p>
-          I&nbsp;started with <b>limited knowledge</b> of <b>Microsoft stack</b> and software&nbsp;engineering in general. Shortly after, I&nbsp;picked&nbsp;up more <b>concepts</b> and <b>design&nbsp;patterns</b> such as "repository" and "DAO" while still being <b>closely monitored</b> by the company's founder.
+          I&nbsp;started with <b>limited knowledge</b> of <b>Microsoft stack</b> and software&nbsp;engineering in general. Shortly after, I&nbsp;picked&nbsp;up more <b>concepts</b> and <b>design&nbsp;patterns</b> such as repository and data access objects while still being <b>closely monitored</b> by the company's founder.
         </p>
       )
     },
