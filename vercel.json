@@ -12,10 +12,6 @@
   ],
   "redirects": [
     {
-      "source": "/(ar|algorhythm)",
-      "destination": "https://www.notion.so/Algorhythm-c23972ce8a3c4a9d8179f3606539d5c5"
-    },
-    {
       "source": "/(bt|botler)",
       "destination": "https://t.me/api_botler_bot"
     },
