@@ -1,6 +1,6 @@
 import { h } from 'preact';
 import { useMemo, useState } from 'preact/hooks';
-import { Helmet } from 'react-helmet';
+import Portal from 'preact-portal';
 
 import Contact from './contact';
 import Experience from './experience';
@@ -15,9 +15,9 @@ const App = () => {
 
   return (
     <div class="container">
-      <Helmet>
+      <Portal into="head">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
-      </Helmet>
+      </Portal>
 
       <div class="section">
         <div class="intro">
