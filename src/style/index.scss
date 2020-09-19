@@ -78,6 +78,7 @@ b {
 .subtitle {
   color: $color-gray;
   text-transform: uppercase;
+  font-weight: $weight-bold;
 
   @media screen and (prefers-color-scheme: dark) {
     color: dark-mode($color-gray);

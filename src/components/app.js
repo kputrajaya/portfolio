@@ -28,7 +28,7 @@ const App = () => {
             <SvgLogo />
           </div>
           <h1>{data.name}</h1>
-          <h4 class="subtitle">{data.title}<span class="bull" />{data.location}</h4>
+          <div class="subtitle">{data.title}<span class="bull" />{data.location}</div>
           {data.description}
           <div class="hide-print">
             {data.contacts.map((contact) => <Contact {...contact} />)}
@@ -49,6 +49,7 @@ const App = () => {
           class="input search hide-print"
           type="text"
           placeholder="Search..."
+          aria-label="Search"
           value={query}
           onInput={(e) => setQuery(e.target.value)}
         />
