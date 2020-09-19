@@ -1,6 +1,6 @@
 import { h } from 'preact';
 import { useMemo, useState } from 'preact/hooks';
-import Portal from 'preact-portal';
+import { Portal } from 'react-portal';
 
 import Contact from './contact';
 import Experience from './experience';
@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <div class="container">
-      <Portal into="head">
+      <Portal node={document && document.getElementById('head')}>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
       </Portal>
 
