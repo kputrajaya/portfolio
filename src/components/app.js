@@ -15,9 +15,12 @@ const App = () => {
 
   return (
     <div class="container">
-      <Portal node={document && document.getElementById('head')}>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
-      </Portal>
+      {
+        typeof window !== "undefined" &&
+        <Portal node={document.getElementById('head')}>
+          <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+        </Portal>
+      }
 
       <div class="section">
         <div class="intro">
