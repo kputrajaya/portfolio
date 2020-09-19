@@ -1,6 +1,5 @@
 import { h } from 'preact';
 import { useMemo, useState } from 'preact/hooks';
-import { Portal } from 'react-portal';
 
 import Contact from './contact';
 import Experience from './experience';
@@ -15,13 +14,6 @@ const App = () => {
 
   return (
     <div class="container">
-      {
-        typeof window !== "undefined" &&
-        <Portal node={document.getElementById('head')}>
-          <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
-        </Portal>
-      }
-
       <div class="section">
         <div class="intro">
           <div class="hide-print">
