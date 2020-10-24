@@ -10,23 +10,23 @@ module.exports = {
   contacts: [
     {
       title: 'Email',
-      link: 'mailto:hi@kvn.pt?subject=Hi, Kevin!'
+      link: 'mailto:hi@kvn.pt'
     },
     {
       title: 'GitHub',
-      link: 'https://github.com/kiloev'
+      link: 'https://kvn.pt/gh'
     },
     {
       title: 'LinkedIn',
-      link: 'https://www.linkedin.com/in/kputrajaya/'
+      link: 'https://kvn.pt/li'
     },
     {
       title: 'Twitter',
-      link: 'https://twitter.com/kputrajaya'
+      link: 'https://kvn.pt/tw'
     },
     {
       title: 'Instagram',
-      link: 'https://www.instagram.com/kputrajaya/'
+      link: 'https://kvn.pt/ig'
     }
   ],
   experiences: [
