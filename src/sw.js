@@ -5,12 +5,15 @@ import { StaleWhileRevalidate } from 'workbox-strategies';
 setupRouting();
 
 // Precache
-const urlsToCache = getFiles();
-urlsToCache.push({url: '/favicon.ico', revision: null});
-setupPrecaching(urlsToCache);
+const precacheUrls = getFiles();
+precacheUrls.push({url: '/favicon.ico', revision: null});
+setupPrecaching(precacheUrls);
 
 // Runtime cache
 registerRoute(
-  /^https?:\/\/fonts\.googleapis\.com\//,
+  ({ url }) => (
+    url.hostname === 'fonts.googleapis.com' ||
+    url.hostname === 'fonts.gstatic.com'
+  ),
   new StaleWhileRevalidate()
 );
