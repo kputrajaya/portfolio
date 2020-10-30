@@ -11,6 +11,6 @@ setupPrecaching(urlsToCache);
 
 // Runtime cache
 registerRoute(
-  ({ url }) => (url.hostname === 'fonts.googleapis.com'),
+  /^https?:\/\/fonts\.googleapis\.com\//,
   new StaleWhileRevalidate()
 );
