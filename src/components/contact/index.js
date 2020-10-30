@@ -2,16 +2,12 @@ import { h } from 'preact';
 
 import SvgContactEmail from '../svgr/contact-email';
 import SvgContactGitHub from '../svgr/contact-github';
-import SvgContactInstagram from '../svgr/contact-instagram';
 import SvgContactLinkedIn from '../svgr/contact-linkedin';
-import SvgContactTwitter from '../svgr/contact-twitter';
 
 const SVG_MAP = {
   Email: SvgContactEmail,
   GitHub: SvgContactGitHub,
-  Instagram: SvgContactInstagram,
   LinkedIn: SvgContactLinkedIn,
-  Twitter: SvgContactTwitter
 };
 
 const Contact = ({ title, link }) => {

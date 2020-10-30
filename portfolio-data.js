@@ -19,14 +19,6 @@ module.exports = {
     {
       title: 'LinkedIn',
       link: 'https://kvn.pt/li'
-    },
-    {
-      title: 'Twitter',
-      link: 'https://kvn.pt/tw'
-    },
-    {
-      title: 'Instagram',
-      link: 'https://kvn.pt/ig'
     }
   ],
   experiences: [
