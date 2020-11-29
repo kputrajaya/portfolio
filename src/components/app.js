@@ -29,7 +29,7 @@ const App = () => {
       </div>
 
       <div class="section">
-        <h2>Experiences</h2>
+        <h2>Experience</h2>
         <div>
           {data.experiences.map((experience) => <Experience {...experience} />)}
         </div>
