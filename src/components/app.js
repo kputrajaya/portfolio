@@ -22,7 +22,7 @@ const App = () => {
           <h1>{data.name}</h1>
           <div class="subtitle">{data.title}<span class="bull" />{data.location}</div>
           {data.description}
-          <div class="hide-print">
+          <div>
             {data.contacts.map((contact) => <Contact {...contact} />)}
           </div>
         </div>

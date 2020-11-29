@@ -1,7 +1,7 @@
 import { h } from 'preact';
 
 const Experience = ({ company, link, title, start, end, body }) => (
-  <div class="experience">
+  <div class={`experience ${company ? 'company' : ''}`}>
     <div>
       {
         company &&

@@ -14,8 +14,11 @@ const Contact = ({ title, link }) => {
   const Svg = SVG_MAP[title];
   return (
     <a class="contact" href={link} title={title} target={link.startsWith('mailto:') ? '_self' : '_blank'} rel="noreferrer">
-      <span>
+      <span class="icon">
         {Svg ? <Svg /> : null}
+      </span>
+      <span class="text">
+        {link.replace(/^.*:\/*/, '')}
       </span>
     </a>
   );

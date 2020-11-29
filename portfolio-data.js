@@ -14,11 +14,11 @@ module.exports = {
     },
     {
       title: 'GitHub',
-      link: 'https://kvn.pt/gh'
+      link: 'https://kvn.pt/github'
     },
     {
       title: 'LinkedIn',
-      link: 'https://kvn.pt/li'
+      link: 'https://kvn.pt/linkedin'
     }
   ],
   experiences: [
