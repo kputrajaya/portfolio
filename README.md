@@ -1,6 +1,6 @@
 # Portfolio
 
-My current portfolio/resume website.
+My old portfolio/resume site.
 
 ## Built With
 
